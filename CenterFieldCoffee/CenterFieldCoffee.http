@@ -1,0 +1,6 @@
+@CenterFieldCoffee_HostAddress = http://localhost:5068
+
+GET {{CenterFieldCoffee_HostAddress}}/api/
+Accept: application/json
+
+###
