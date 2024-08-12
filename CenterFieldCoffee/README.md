@@ -6,7 +6,7 @@ It must be run inside the CenterfieldCoffee folder inside the root folder.
 ```
 dotnet run
 ```
-
+<i>Addendum</i> I added a simple ui for adding and deleting stores. I placed the code in the client folder and it can be run by running npm install followed by npm run dev. The server code must be run first.
 ## The application uses .NetCore controllers for the api endpoints and code first EntityFramework classes backed by a sqllite database. The first time the application runs the database is seeded using the following function:
 
 ```
@@ -74,6 +74,7 @@ The id is in the form of a guid. The same optional currtime can be passed as a q
 * Do a full security threat level scan based on where the api will be hosted including locking down access using authorization tokens, protecting against SQL injection attacks etc.
 * Optimize the database fields to reduce the storage types along with query optimizations based on the complexity of a fully fleshed out data model
 * Add location data fields including latitude and longitude for location based searches
+* Track days of week to enchance the is open logic
 * Add fully fleshed out testing across multiple timezones
 * Conduct stress tests for the api endpoints based on expected usage patterns.
 * Fully document API endpoints by enhancing the automatic swagger generated documentation
